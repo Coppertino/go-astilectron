@@ -17,6 +17,8 @@ type Event struct {
 	Name     string `json:"name"`
 	TargetID string `json:"targetID,omitempty"`
 
+	Data map[string]interface{} `json:"data,omitempty"`
+
 	// This is a list of all possible payloads.
 	// A choice was made not to use interfaces since it's a pain in the ass asserting each an every payload afterwards
 	// We use pointers so that omitempty works

@@ -19,8 +19,8 @@ import (
 // Versions
 const (
 	DefaultAcceptTCPTimeout = 30 * time.Second
-	VersionAstilectron      = "0.32.0"
-	VersionElectron         = "4.0.1"
+	VersionAstilectron      = "0.33.0"
+	VersionElectron         = "4.2.0"
 )
 
 // Misc vars
@@ -34,14 +34,16 @@ var (
 
 // App event names
 const (
-	EventNameAppClose         = "app.close"
-	EventNameAppCmdQuit       = "app.cmd.quit" // Sends an event to Electron to properly quit the app
-	EventNameAppCmdStop       = "app.cmd.stop" // Cancel the context which results in exiting abruptly Electron's app
-	EventNameAppCrash         = "app.crash"
-	EventNameAppErrorAccept   = "app.error.accept"
-	EventNameAppEventReady    = "app.event.ready"
-	EventNameAppNoAccept      = "app.no.accept"
-	EventNameAppTooManyAccept = "app.too.many.accept"
+	EventNameAppClose           = "app.close"
+	EventNameAppCmdQuit         = "app.cmd.quit" // Sends an event to Electron to properly quit the app
+	EventNameAppCmdStop         = "app.cmd.stop" // Cancel the context which results in exiting abruptly Electron's app
+	EventNameAppCrash           = "app.crash"
+	EventNameAppErrorAccept     = "app.error.accept"
+	EventNameAppEventReady      = "app.event.ready"
+	EventNameAppEventActivate   = "app.event.activate"
+	EventNameAppEventBeforeQuit = "app.event.before-quit"
+	EventNameAppNoAccept        = "app.no.accept"
+	EventNameAppTooManyAccept   = "app.too.many.accept"
 )
 
 // Astilectron represents an object capable of interacting with Astilectron
