@@ -20,7 +20,7 @@ import (
 const (
 	DefaultAcceptTCPTimeout = 30 * time.Second
 	VersionAstilectron      = "0.33.0"
-	VersionElectron         = "4.2.0"
+	VersionElectron         = "4.2.6"
 )
 
 // Misc vars
